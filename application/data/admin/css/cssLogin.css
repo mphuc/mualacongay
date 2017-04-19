@@ -1,0 +1,100 @@
+body{
+    background: #133959;
+}
+*{
+    font-family: Tahoma,Geneva,sans-serif;
+    transition: all 0s;
+}
+#login_box{
+    min-width: 280px;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+#login_box .header_login{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+#login_box .form_group{
+    position: relative;
+}
+#login_box .icon_login{
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #eaedf1;
+    border-radius: 50%;
+}
+#login_box .icon_login span{
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    color: #eaedf1;
+}
+
+#login_box .form_control{
+    width: 100%;
+    padding: 12px 30px;
+    border: 1px solid #CBD5DD;
+    border-radius: 25px;
+    font-size: 17px;
+    text-align: center;
+    margin: 7px 0;
+    color: #eaedf1;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(137, 157, 180, 0.1);
+}
+#login_box .form_control:focus{
+    outline: none;
+    border: 1px solid rgba(137, 157, 180, 0.3);
+    box-shadow:0 1px 3px rgba(137, 157, 180, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06) !important;
+} 
+#login_box #submit_login{
+    color: #fff;
+    background: #133959;
+    cursor: pointer;
+    box-shadow:0 1px 8px rgba(137, 157, 180, 0.3) inset, 0 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+} 
+#login_box #submit_login:hover{
+    box-shadow:0 1px 6px rgba(137, 157, 180, 0.3) inset, 0 2px rgba(0, 0, 0, 0.3);
+}
+#login_box #submit_login:hover{
+
+}
+
+.notice{
+    color: #FC5659 !important;
+    text-align: center;
+    display: none;  
+    transition: all 0s !important;
+}
+.notice span{
+    font-size: 20px;
+}
+
+#login_box label.error{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.load_window_phone span[class*="l-"] {
+    background: #fff !important;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    opacity: 0.6;
+}

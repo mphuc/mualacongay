@@ -1,0 +1,126 @@
+	/* must set border width with px */
+	.paginator_p {
+		text-align:center;
+		float:left;
+		color:white;
+		background-color:#B7B7B7;
+		cursor:pointer;
+		padding:2px 0 0 0;
+	}
+	.paginator_p_bloc {
+		position:relative;
+		width:3000px;
+	}
+	.paginator_p.over {
+		background-color:#8B8B8B;
+	}
+	.paginator_p.selected {
+		background-color:#CAFF3A;
+		color:white;
+		background-color:black;
+	}
+	.paginator_p_wrap {
+		position:relative;
+		overflow:hidden;
+		float:left;
+		/*padding: 0 5px;*/
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+	.paginator_slider {
+		clear:left;
+		height: 4px;
+		width: 0;
+		top: 6px;
+		background: white; 
+		position:relative;
+	}
+
+	.paginator_slider .ui-slider-handle {
+		width: 8px;
+		height: 12px;
+		position: absolute;
+		top: -4px;
+		background-color:black;
+	}
+
+
+	/*----------------*/ 
+	.pagination_item { 
+		float: right;
+		margin: 15px 0;
+	}
+	.first_left {
+    width:22px; height:15px;
+    float:left; 
+    margin:4px 4px 0 0;
+    color: #808080;
+	}
+
+	.next_right {
+    width:22px; height:20px;
+    float:left; 
+    margin:4px 0 0 4px;
+    color: #808080;
+    text-align: right;
+	} 
+
+	.pre_left {
+    cursor:pointer;
+    width:22px; height:15px;
+    float:left; 
+    color: #808080;
+    margin:4px 2px 0 0;
+	}
+
+	.last_right {
+    cursor:pointer;
+    width:22px; height:15px;
+    float:left; 
+    margin:4px 0 0 2px;
+    color: #808080;
+    text-align: right;
+	}
+
+	/* must set border width with px */
+	.pagination_item .paginator_p {  
+		color: #666; 
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: normal;
+		text-align: center;
+		border: 1px solid #ccc;   
+
+		box-shadow: 0 0px 1px rgba(0,0,0,0.2);
+		background: #efefef;
+		background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+		background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%);
+		background: linear-gradient(top, #ffffff 0%,#efefef 100%);
+	} 
+	.pagination_item .paginator_p_bloc {
+	}
+	.pagination_item .paginator_p:hover { 
+		background:#fff;
+	}
+	.pagination_item .paginator_p.selected {
+		color:#FFF;
+		background:#666;
+		box-shadow: 0 1px 0 rgba(255,255,255,1), 0 0 2px rgba(0, 0, 0, 0.3) inset;
+		/*cursor: default;*/
+	}
+	.pagination_item .paginator_slider {
+		background-color:#EDEDED;
+		left:50px;
+	}
+	.pagination_item .paginator_slider .ui-slider-handle {
+		width: 10px;
+		height: 8px;
+		top: -2px;
+		background-color:#808080; 
+	}  

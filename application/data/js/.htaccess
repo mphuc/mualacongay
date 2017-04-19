@@ -1,0 +1,10 @@
+RewriteEngine On 
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+RewriteRule ^(.*)$ index.php?/$1 [L]
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:hanyVe
+ErrorDocument 400 /400.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE hanyVe:ERRORPAGEID
+
