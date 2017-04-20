@@ -36,6 +36,15 @@ class Sanpham extends CI_Controller {
             $data['sidebar'] = $this->main_lib->get_sidebar(0,$data['chitiet_sanpham']['LoaiSPID']); 
             $data['loaisp'] = $this->loaisanpham_model->get_chitiet_loaisp($data['chitiet_sanpham']['LoaiSPID']);
 
+            if ($data['loaisp']['lock_dm'] == 1)
+            {
+                session_start();
+                if (!isset($_SESSION['lock_ql']))
+                {
+                    redirect('/lock', 'location');
+                }
+            }
+
             $data['title'] = $data['chitiet_sanpham']['TenSP'].' || Mua là có ngay';
             $loaisp = $data['loaisp'];
             $data['path_1'] = '<a href="'.base_url().'danh-muc/'.$loaisp['DanhMucID'].'/'.url_title(removesign($loaisp['TenDanhMuc'])).'">'.$loaisp['TenDanhMuc'].'</a>';

@@ -16,6 +16,8 @@ class Danhmuc extends CI_Controller {
     // ------------INDEX------------
     public function index($DanhMucID,$page=0){ 
 
+
+
         $history=1;
         if(isset($_POST['history'])){
             $history = $_POST['history']; 
@@ -28,7 +30,14 @@ class Danhmuc extends CI_Controller {
         $data['list_sanpham'] = $this->sanpham_model->get_sanpham_on_danhmuc_index($DanhMucID,$number,$offset);
         // $data['list_gia'] = $this->main_lib->get_gia_sanpham($data['list_sanpham']); 
         $data['danhmuc'] = $this->danhmuc_model->get_chitiet_danhmuc($DanhMucID);
-
+        if ($data['danhmuc']['lock_dm'] == 1)
+        {
+            session_start();
+            if (!isset($_SESSION['lock_ql']))
+            {
+                redirect('/lock', 'location');
+            }
+        }
         $count_all_sp = $this->sanpham_model->count_sanpham_on_danhmuc_index($DanhMucID);
         $data['all_page'] = ceil($count_all_sp/$number);
         $data['cur_page'] = $page; 

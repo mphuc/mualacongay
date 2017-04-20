@@ -8,7 +8,7 @@ define('dataadmin_url',    base_url().'application/data/admin/');
     <title><?=$title?></title> 
     <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <link rel="icon" href="<?=data_url?>img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="<?=data_url?>shop/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=data_url?>shop/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=data_url?>shop/css/owl.carousel.min.css">
@@ -46,7 +46,7 @@ define('dataadmin_url',    base_url().'application/data/admin/');
                         <div class="phone-block top-block">
                             <span class="top-number top-inner">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span class="call-number">CALL 0123-456-789</span>
+                                <span class="call-number">Hotline 0123-456-789</span>
                             </span>
                         </div>
                         <div class="accounts-block top-block top-navwrap">
@@ -86,8 +86,8 @@ define('dataadmin_url',    base_url().'application/data/admin/');
                     <div class="display-flex">
                         <div class="col-sm-3">
                             <div class="header-logo logo">
-                                <a href="index-2.html" title="Rosa Logo">
-                                    <img src="img/logo.png" alt="Rosa logo"/>
+                                <a href="index.php" title="Rosa Logo">
+                                    <img src="<?=data_url?>img/logo.png" alt="" style="width: 240px;"/>
                                 </a>
                             </div>
                         </div>
@@ -155,8 +155,8 @@ define('dataadmin_url',    base_url().'application/data/admin/');
                                 <i class="fa fa-truck" aria-hidden="true"></i>
                             </div>
                             <div class="support-shipping-content">
-                                <h5><a href="#">Free Shipping</a></h5>
-                                <p>Get Free Shipping on all orders over $75</p>
+                                <h5><a href="#">Miễn phí giao hàng</a></h5>
+                                <p>Miễn phí giao hàng cho đơn hàng trên 2.000.000 VNĐ</p>
                             </div>
                         </div>
                     </div>
@@ -166,8 +166,8 @@ define('dataadmin_url',    base_url().'application/data/admin/');
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                             <div class="support-shipping-content">
-                                <h5><a href="#">Support 24/7</a></h5>
-                                <p>Consult our specialists for help with ans order</p>
+                                <h5><a href="#">Hỗ trợ 24/7</a></h5>
+                                <p>Liên hệ với chúng tôi để hiểu rõ về mua là có</p>
                             </div>
                         </div>
                     </div>
@@ -177,8 +177,8 @@ define('dataadmin_url',    base_url().'application/data/admin/');
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                             </div>
                             <div class="support-shipping-content">
-                                <h5><a href="#">No Customs or duty fees!</a></h5>
-                                <p>We pay these fees so you don't have to!</p>
+                                <h5><a href="#">Các loại phí khác</a></h5>
+                                <p>Chúng tôi trả các khoản phí này vì vậy bạn không phải!</p>
                             </div>
                         </div>
                     </div>

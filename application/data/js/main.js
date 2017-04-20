@@ -166,9 +166,11 @@ $(document).ready(function(){
         $SoLuong = 1;
         $.post(base_url+'cart/add_cart',{"SanPhamID":$SanPhamID,"SoLuong":$SoLuong}).done(
         function(data){ 
+            $(".block-minicart > a:hover").css({'color': '#ffffff','background-color': '#27aba6'});
             $btn.button('reset');
             if(!isNaN(data)){
                 $('.count_cart').html(data);
+
             }
         });    
 

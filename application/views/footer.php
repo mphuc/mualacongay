@@ -2,7 +2,7 @@
     </div>
 </div>
     <footer>
-        <div class="footer-top">
+        <!-- <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-md-offset-1">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="footer-middle">
             <div class="container">
                 <div class="row">
@@ -28,12 +28,12 @@
                             <div class="widget footer-widget about-widget">
                                 <div class="widget-content">
                                     <div class="footer-logo">
-                                        <a href="index-2.html" title="Rosa Logo">
-                                            <img src="img/logo.png" alt="Rosa logo"/>
+                                        <a href="index.php" title="Rosa Logo">
+                                            <img src="<?=data_url?>img/logo.png" alt="" style="width: 240px;"/>
                                         </a>
                                     </div>
                                     <div style="background: url(img/map.png) no-repeat center center / contain; float: left; width: 100%">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                                        
                                         <div class="contact-infos">
                                             <div class="cotact-info contact-address">
                                                 <div class="contact-icon">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="widget footer-widget product-widget">
-                                <h4 class="widget-title">SALES OFF<span class="toggle-btn"></span></h4>
+                                <h4 class="widget-title">Tin tức<span class="toggle-btn"></span></h4>
                                 <div class="widget-content mobile-collapse">
                                     <?php foreach ($tintuc_moinhat as $item) { ?>
                                        
@@ -89,7 +89,7 @@
                         </div>
                         <div class="col-md-2 col-sm-4">
                             <div class="widget footer-widget custom-menu-widget">
-                                <h4 class="widget-title">My account<span class="toggle-btn"></span></h4>
+                                <h4 class="widget-title">Liên kết<span class="toggle-btn"></span></h4>
                                 <div class="widget-content mobile-collapse">
                                     <ul class="menu custom-menu account-menu">
                                     
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-md-4 col-sm-4">
                             <div class="widget footer-widget custom-menu-widget">
-                                <h4 class="widget-title">Fanpage<span class="toggle-btn"></span></h4>
+                                <h4 class="widget-title">Fanpage Facebook<span class="toggle-btn"></span></h4>
                                 <div class="widget-content mobile-collapse">
                                     
                                 </div>
@@ -130,7 +130,7 @@
                             <li class="menu-item"><a href="#">Account</a></li>
                             <li class="menu-item"><a href="#">Wishlist</a></li>
                         </ul>
-                        <p class="copyright">Copyright &copy; 2017 <a href="#">CodeChant</a>. All rights reserved.</p>
+                        <p class="copyright">Copyright &copy; 2017 . All rights reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <div class="socials footer-socials">

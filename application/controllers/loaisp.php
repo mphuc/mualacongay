@@ -49,7 +49,7 @@ class Loaisp extends CI_Controller {
         $data['sidebar'] = $this->main_lib->get_sidebar(0,$LoaiSPID);
         $data['title'] = $data['loaisp']['TenLoaiSP'].' || Mua là có ngay';
         $data = array_merge($this->main_lib->get_data_index() , $data);
-        
+        $data['product_new'] = $this->main_lib->get_product_new();
         ($history == 1) ? $this->load->view('header',$data):0;
         ($history == 1) ? $this->load->view('aside',$data):0;
         $this->load->view('main',$data);
