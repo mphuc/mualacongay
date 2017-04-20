@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin | <?=$title?></title>
-    <link rel="shortcut icon" href="<?=data_url?>img/icon.png">
+    <link rel="icon" href="<?=data_url?>img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="<?=data_url?>css/fotorama/fotorama.css">  
     
     <link href="<?=dataadmin_url?>css/font-awesome.css" rel="stylesheet" type="text/css" />
