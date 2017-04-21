@@ -36,7 +36,7 @@ class Sanpham extends CI_Controller {
             $data['sidebar'] = $this->main_lib->get_sidebar(0,$data['chitiet_sanpham']['LoaiSPID']); 
             $data['loaisp'] = $this->loaisanpham_model->get_danhmuc($data['chitiet_sanpham']['LoaiSPID']);
 
-           // print_r($data['loaisp']);die;
+            print_r($data['loaisp']['lock_dm']);die;
 
             if ($data['loaisp']['lock_dm'] == 1)
             {
