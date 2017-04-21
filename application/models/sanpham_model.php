@@ -254,7 +254,7 @@ class SanPham_model extends CI_Model{
 
     public function get_sp_admin($number, $offset){
         $this->db->select('sanpham.*'); 
-        $this->db->join('loaisanpham', 'loaisanpham.LoaiSPID = sanpham.LoaiSPID');
+        
         $this->db->join('danhmuc', 'loaisanpham.DanhMucID = danhmuc.DanhMucID');
         $this->db->limit($number,$offset); 
         $this->db->order_by("NgayTao DESC");
