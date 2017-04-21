@@ -33,6 +33,7 @@
 	position: absolute;
 	z-index: 999999;
 	padding: 10px;
+	width: 100%;
 }
 .result_wrapper a{
 	border-bottom: 1px solid #eee;
