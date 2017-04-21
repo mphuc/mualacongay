@@ -34,6 +34,13 @@ define('dataadmin_url',    base_url().'application/data/admin/');
             return true;
         }
     </script>
+
+    <meta property="og:url"           content="https://mualacongay.com/" />
+      <meta property="og:type"          content="website" />
+      <meta property="og:title"         content="mualacongay.com" />
+      <meta property="og:description"   content="mualacongay.com" />
+      <meta property="og:image"         content="<?=data_url?>img/logo.png" />
+    
 </head>
 
 <body> 

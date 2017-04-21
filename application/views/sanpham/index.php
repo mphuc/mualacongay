@@ -70,6 +70,10 @@
                     <span class="attr_value"><?=$thongtin['SDT']?></span>
                     để được tư vấn trực tiếp.
                 </div>
+                <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+                <div class="call_sanpham" style="margin: 15px 0">
+                    <div class="fb-like" data-href="<?php echo $actual_link ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                </div>
                 <div class="order_chitiet_sanpham">
                     
                     <div class="block_quantity">
@@ -91,7 +95,23 @@
         <h3 class="text-center" style="margin-bottom: 30px;">Mô tả sản phẩm</h3>
         <?=$chitiet_sanpham['NoiDung']?>
     </div>
+    <div class="clearfix"></div>
+    <div class="commnet_fb">
 
+
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=113193265882320";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+        <div class="fb-comments" data-href="<?php echo $actual_link; ?>" data-width="100%" data-numposts="20"></div>
+    </div>
+    <div class="clearfix"></div>
     <div class="thongtin_sanpham">
         <h3 class="text-center" style="margin-bottom: 30px;">Sản phẩm cùng loại</h3>
         
