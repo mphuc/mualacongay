@@ -13,6 +13,12 @@ class loaisanpham_model extends CI_Model{
         return $query->result_array();
     } 
 
+    public function get_danhmuc($id_dm){ 
+        $query = $this->db->query("SELECT * FROM danhmuc where DanhMucID = '".$id_dm."'");
+       
+        return $query->result_array();
+    } 
+
     public function get_chitiet_loaisp($LoaiSPID=0){ 
         $this->db->where('loaisanpham.LoaiSPID',$LoaiSPID);
         $this->db->join('danhmuc','loaisanpham.DanhMucID = danhmuc.DanhMucID');
