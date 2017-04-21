@@ -16,7 +16,7 @@ class loaisanpham_model extends CI_Model{
     public function get_danhmuc($id_dm){ 
         $query = $this->db->query("SELECT * FROM danhmuc where DanhMucID = '".$id_dm."'");
        
-        return $query->result_array();
+        return $query->row_array();
     } 
 
     public function get_chitiet_loaisp($LoaiSPID=0){ 
