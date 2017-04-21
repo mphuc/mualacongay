@@ -50,7 +50,7 @@ class Sanpham extends CI_Controller {
             $data['title'] = $data['chitiet_sanpham']['TenSP'].' || Mua là có ngay';
             $loaisp = $data['loaisp'];
             $data['path_1'] = '<a href="'.base_url().'danh-muc/'.$loaisp['DanhMucID'].'/'.url_title(removesign($loaisp['TenDanhMuc'])).'">'.$loaisp['TenDanhMuc'].'</a>';
-            $data['path_2'] = '<a href="'.base_url().'loai/'.$loaisp['LoaiSPID'].'/'.url_title(removesign($loaisp['TenLoaiSP'])).'">'.$loaisp['TenLoaiSP'].'</a>';
+            $data['path_2'] = '<a href="'.base_url().'loai/'.$loaisp['DanhMucID'].'/'.url_title(removesign($loaisp['TenLoaiSP'])).'">'.$loaisp['TenLoaiSP'].'</a>';
 
             $number = 5;
             $page = 1;
