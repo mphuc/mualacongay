@@ -117,8 +117,8 @@ class SanPham_model extends CI_Model{
     // -----------lay san pham theo danh muc + phan trang---------
     public function get_sanpham_on_danhmuc_index($DanhMucID=0,$number,$offset){ 
         $this->db->where('danhmuc.DanhMucID',$DanhMucID);
-        $this->db->join('loaisanpham', 'loaisanpham.LoaiSPID = sanpham.LoaiSPID');
-        $this->db->join('danhmuc', 'danhmuc.DanhMucID = loaisanpham.DanhMucID');
+       // $this->db->join('loaisanpham', 'loaisanpham.LoaiSPID = sanpham.LoaiSPID');
+        $this->db->join('danhmuc', 'danhmuc.DanhMucID = sanpham.LoaiSPID');
         $this->db->limit($number,$offset);
         $this->db->order_by("NgayTao DESC");
         $query = $this->db->get("sanpham");
