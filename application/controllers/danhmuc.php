@@ -28,6 +28,7 @@ class Danhmuc extends CI_Controller {
         $offset = ($page != 1) ? ($page-1)*$number : 0; 
 
         $data['list_sanpham'] = $this->sanpham_model->get_sanpham_on_danhmuc_index($DanhMucID,$number,$offset);
+        print_r($data['list_sanpham']);die;
         // $data['list_gia'] = $this->main_lib->get_gia_sanpham($data['list_sanpham']); 
         $data['danhmuc'] = $this->danhmuc_model->get_chitiet_danhmuc($DanhMucID);
         if ($data['danhmuc']['lock_dm'] == 1)
