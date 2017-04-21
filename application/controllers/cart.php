@@ -277,12 +277,13 @@ class Cart extends CI_Controller {
 
             $data['path_1'] = '<a href="'.base_url().'cart.html">Giỏ hàng</a>';
             $data = array_merge($this->main_lib->get_data_index() , $data);
-
+             $data['product_new'] = $this->main_lib->get_product_new();
             $this->load->view('header',$data);
             $this->load->view('aside',$data);
-             $data['product_new'] = $this->main_lib->get_product_new();
+            
             $this->load->view('cart/thanh_toan',$data);
             $this->load->view('footer',$data);
+            
         }else{
             redirect('cart','refresh');
         }
