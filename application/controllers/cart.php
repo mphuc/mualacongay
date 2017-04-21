@@ -25,6 +25,7 @@ class Cart extends CI_Controller {
 
         $data['sidebar'] = $this->main_lib->get_sidebar();
         $data['product_new'] = $this->main_lib->get_product_new();
+
         $data['shopping_cart'] = $this->show_cart();
         $data = array_merge($this->main_lib->get_data_index() , $data);
 
@@ -279,6 +280,7 @@ class Cart extends CI_Controller {
 
             $this->load->view('header',$data);
             $this->load->view('aside',$data);
+             $data['product_new'] = $this->main_lib->get_product_new();
             $this->load->view('cart/thanh_toan',$data);
             $this->load->view('footer',$data);
         }else{
