@@ -129,7 +129,7 @@ class Admin extends CI_Controller {
                 $data['menuActive'] = 'sanpham';
                 $data['title'] = 'Sản phẩm';                        
                 $data = array_merge($this->main_lib->get_data_admin() , $data);
-                $data['danhmuc'] = $this->danhmuc_model->get_loaisanpham();
+                $data['danhmuc'] = $this->danhmuc_model->get_danhmuc();
                 //print_r($data['danhmuc']);die;
                 $data['select_loaisp'] = $this->main_lib->get_select_loaisp();
                 $this->load->view('admin/headerAdmin',$data);

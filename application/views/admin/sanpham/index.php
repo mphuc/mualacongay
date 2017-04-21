@@ -179,9 +179,11 @@
                         <div class="form-group ">
                             <label class="col-sm-2 control-label" for="input_tieude">Danh mục sản phẩm:</label>
                             <div class="col-sm-10"> 
+                             <?php //print_r($danhmuc) ?>
                                 <select name="input_danhmuc" id="input_danhmuc" class="form-control" >
+
                                     <?php foreach ($danhmuc as $key => $value) { ?>
-                                        <option value="<?php echo $value['LoaiSPID'];?>"><?php echo $value['TenLoaiSP'];?></option>
+                                        <option value="<?php echo $value['DanhMucID'];?>"><?php echo $value['TenDanhMuc'];?></option>
                                     <?php  } ?>
                                 </select>
                                 
